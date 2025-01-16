@@ -8,3 +8,11 @@ class Character(Turtle):
         self.setheading(90)
         self.penup()
         self.goto(TURTLE_STARTING_POSITION)
+        self.move_speed=0.1
+
+    def move_up(self):
+        self.forward(10)
+
+    def reset_game(self):
+        self.goto(TURTLE_STARTING_POSITION)
+        self.move_speed*=0.9
